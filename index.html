@@ -5,17 +5,24 @@
     <title>Phaser pacman</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/phaser.min.js"></script>
+    <script src="js/boot.js"></script>
     <script src="js/title.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scoreboard.js"></script>
   </head>
   <body>
     <script>
-    		var game = new Phaser.Game(800, 600, Phaser.AUTO, '');
-    		game.state.add('Title', title);
-    		game.state.add('Main', main);
-    		game.state.add('Scoreboard', scoreboard);
-    		game.state.start("Title");
+        var PhaserPacman = PhaserPacman || {};
+
+    		PhaserPacman.game = new Phaser.Game(800, 600, Phaser.AUTO, '');
+        // pixel art : no smoothing, please
+        PhaserPacman.game.antialias = false;
+        
+        PhaserPacman.game.state.add('PhaserPacman.Boot', PhaserPacman.Boot);
+    		PhaserPacman.game.state.add('PhaserPacman.Title', PhaserPacman.Title);
+    		PhaserPacman.game.state.add('PhaserPacman.Main', PhaserPacman.Main);
+    		PhaserPacman.game.state.add('PhaserPacman.Scoreboard', PhaserPacman.Scoreboard);
+    		PhaserPacman.game.state.start('PhaserPacman.Boot');
     	</script>
   </body>
 </html>

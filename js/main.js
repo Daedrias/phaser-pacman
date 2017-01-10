@@ -1,8 +1,10 @@
-main = function(game) {
+var PhaserPacman = PhaserPacman || {};
+
+PhaserPacman.Main = function(game) {
 
 };
 
-main.prototype = {
+PhaserPacman.Main.prototype = {
   create: function() {},
   update: function() {},
   shutDowm: function() {}

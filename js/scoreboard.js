@@ -1,8 +1,8 @@
-scoreboard = function(game) {
+PhaserPacman.Scoreboard = function(game) {
 
 };
 
-scoreboard.prototype = {
+PhaserPacman.Scoreboard.prototype = {
   create: function() {},
   update: function() {},
   shutDowm: function() {}

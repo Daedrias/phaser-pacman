@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-up" width="28" height="36" tilewidth="8" tileheight="8" nextobjectid="296">
+ <tileset firstgid="1" name="maze_tileset" tilewidth="8" tileheight="8" spacing="1" tilecount="42" columns="14">
+  <image source="maze_tileset.png" width="125" height="26"/>
+ </tileset>
+ <layer name="background" width="28" height="36">
+  <data encoding="csv">
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
+16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16
+</data>
+ </layer>
+ <layer name="walls" width="28" height="36">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,2,2,2,2,2,2,2,2,2,2,2,2,20,21,2,2,2,2,2,2,2,2,2,2,2,2,3,
+15,0,0,0,0,0,0,0,0,0,0,0,0,22,24,0,0,0,0,0,0,0,0,0,0,0,0,17,
+15,0,8,9,9,10,0,8,9,9,9,10,0,22,24,0,8,9,9,9,10,0,8,9,9,10,0,17,
+15,0,22,0,0,24,0,22,0,0,0,24,0,22,24,0,22,0,0,0,24,0,22,0,0,24,0,17,
+15,0,36,37,37,38,0,36,37,37,37,38,0,36,38,0,36,37,37,37,38,0,36,37,37,38,0,17,
+15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,
+15,0,8,9,9,10,0,8,10,0,8,9,9,9,9,9,9,10,0,8,10,0,8,9,9,10,0,17,
+15,0,36,37,37,38,0,22,24,0,36,37,37,32,33,37,37,38,0,22,24,0,36,37,37,38,0,17,
+15,0,0,0,0,0,0,22,24,0,0,0,0,22,24,0,0,0,0,22,24,0,0,0,0,0,0,17,
+29,30,30,30,30,10,0,22,35,9,9,10,0,22,24,0,8,9,9,34,24,0,8,30,30,30,30,31,
+0,0,0,0,0,15,0,22,33,37,37,38,0,36,38,0,36,37,37,32,24,0,17,0,0,0,0,0,
+0,0,0,0,0,15,0,22,24,0,0,0,0,0,0,0,0,0,0,22,24,0,17,0,0,0,0,0,
+0,0,0,0,0,15,0,22,24,0,11,12,14,23,23,26,12,13,0,22,24,0,17,0,0,0,0,0,
+2,2,2,2,2,38,0,36,38,0,25,0,0,0,0,0,0,27,0,36,38,0,36,2,2,2,2,2,
+0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,0,
+30,30,30,30,30,10,0,8,10,0,25,0,0,0,0,0,0,27,0,8,10,0,8,30,30,30,30,30,
+0,0,0,0,0,15,0,22,24,0,39,40,40,40,40,40,40,41,0,22,24,0,17,0,0,0,0,0,
+0,0,0,0,0,15,0,22,24,0,0,0,0,0,0,0,0,0,0,22,24,0,17,0,0,0,0,0,
+0,0,0,0,0,15,0,22,24,0,8,9,9,9,9,9,9,10,0,22,24,0,17,0,0,0,0,0,
+1,2,2,2,2,38,0,36,38,0,36,37,37,32,33,37,37,38,0,36,38,0,36,2,2,2,2,3,
+15,0,0,0,0,0,0,0,0,0,0,0,0,22,24,0,0,0,0,0,0,0,0,0,0,0,0,17,
+15,0,8,9,9,10,0,8,9,9,9,10,0,22,24,0,8,9,9,9,10,0,8,9,9,10,0,17,
+15,0,36,37,32,24,0,36,37,37,37,38,0,36,38,0,36,37,37,37,38,0,22,8,37,38,0,17,
+15,0,0,0,22,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,24,0,0,0,17,
+5,9,10,0,22,24,0,8,10,0,8,9,9,9,9,9,9,10,0,8,10,0,22,24,0,8,9,4,
+19,37,38,0,36,38,0,22,24,0,36,37,37,32,33,37,37,38,0,22,24,0,36,38,0,36,37,18,
+15,0,0,0,0,0,0,22,24,0,0,0,0,22,24,0,0,0,0,22,24,0,0,0,0,0,0,17,
+15,0,8,9,9,9,9,34,35,9,9,10,0,22,24,0,8,9,9,34,35,9,9,9,9,10,0,17,
+15,0,36,37,37,37,37,37,37,37,37,38,0,36,38,0,36,37,37,37,37,37,37,37,37,38,0,17,
+15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,
+29,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="gums">
+  <object id="39" name="gum" type="gum" gid="28" x="8" y="40" width="8" height="8"/>
+  <object id="40" name="gum" type="gum" gid="28" x="16" y="40" width="8" height="8"/>
+  <object id="41" name="gum" type="gum" gid="28" x="24" y="40" width="8" height="8"/>
+  <object id="42" name="gum" type="gum" gid="28" x="32" y="40" width="8" height="8"/>
+  <object id="43" name="gum" type="gum" gid="28" x="40" y="40" width="8" height="8"/>
+  <object id="44" name="gum" type="gum" gid="28" x="48" y="40" width="8" height="8"/>
+  <object id="45" name="gum" type="gum" gid="28" x="56" y="40" width="8" height="8"/>
+  <object id="46" name="gum" type="gum" gid="28" x="64" y="40" width="8" height="8"/>
+  <object id="47" name="gum" type="gum" gid="28" x="80" y="40" width="8" height="8"/>
+  <object id="48" name="gum" type="gum" gid="28" x="72" y="40" width="8" height="8"/>
+  <object id="49" name="gum" type="gum" gid="28" x="88" y="40" width="8" height="8"/>
+  <object id="50" name="gum" type="gum" gid="28" x="96" y="40" width="8" height="8"/>
+  <object id="51" name="gum" type="gum" gid="28" x="96" y="48" width="8" height="8"/>
+  <object id="52" name="gum" type="gum" gid="28" x="96" y="56" width="8" height="8"/>
+  <object id="53" name="gum" type="gum" gid="28" x="96" y="64" width="8" height="8"/>
+  <object id="54" name="gum" type="gum" gid="28" x="96" y="72" width="8" height="8"/>
+  <object id="55" name="gum" type="gum" gid="28" x="8" y="48" width="8" height="8"/>
+  <object id="56" name="gum" type="gum" gid="28" x="8" y="64" width="8" height="8"/>
+  <object id="57" name="gum" type="gum" gid="28" x="8" y="72" width="8" height="8"/>
+  <object id="58" name="gum" type="gum" gid="28" x="8" y="80" width="8" height="8"/>
+  <object id="59" name="gum" type="gum" gid="28" x="8" y="88" width="8" height="8"/>
+  <object id="60" name="gum" type="gum" gid="28" x="8" y="96" width="8" height="8"/>
+  <object id="61" name="gum" type="gum" gid="28" x="16" y="96" width="8" height="8"/>
+  <object id="62" name="gum" type="gum" gid="28" x="24" y="96" width="8" height="8"/>
+  <object id="63" name="gum" type="gum" gid="28" x="32" y="96" width="8" height="8"/>
+  <object id="64" name="gum" type="gum" gid="28" x="40" y="96" width="8" height="8"/>
+  <object id="65" name="gum" type="gum" gid="28" x="48" y="96" width="8" height="8"/>
+  <object id="66" name="gum" type="gum" gid="28" x="48" y="88" width="8" height="8"/>
+  <object id="67" name="gum" type="gum" gid="28" x="48" y="80" width="8" height="8"/>
+  <object id="72" name="gum" type="gum" gid="28" x="48" y="72" width="8" height="8"/>
+  <object id="73" name="gum" type="gum" gid="28" x="48" y="64" width="8" height="8"/>
+  <object id="74" name="gum" type="gum" gid="28" x="48" y="48" width="8" height="8"/>
+  <object id="75" name="gum" type="gum" gid="28" x="48" y="56" width="8" height="8"/>
+  <object id="76" name="gum" type="gum" gid="28" x="16" y="72" width="8" height="8"/>
+  <object id="77" name="gum" type="gum" gid="28" x="24" y="72" width="8" height="8"/>
+  <object id="78" name="gum" type="gum" gid="28" x="32" y="72" width="8" height="8"/>
+  <object id="79" name="gum" type="gum" gid="28" x="40" y="72" width="8" height="8"/>
+  <object id="80" name="gum" type="gum" gid="28" x="56" y="72" width="8" height="8"/>
+  <object id="81" name="gum" type="gum" gid="28" x="72" y="72" width="8" height="8"/>
+  <object id="82" name="gum" type="gum" gid="28" x="64" y="72" width="8" height="8"/>
+  <object id="83" name="gum" type="gum" gid="28" x="80" y="72" width="8" height="8"/>
+  <object id="84" name="gum" type="gum" gid="28" x="88" y="72" width="8" height="8"/>
+  <object id="85" name="gum" type="gum" gid="28" x="96" y="96" width="8" height="8"/>
+  <object id="86" name="gum" type="gum" gid="28" x="88" y="96" width="8" height="8"/>
+  <object id="87" name="gum" type="gum" gid="28" x="80" y="96" width="8" height="8"/>
+  <object id="88" name="gum" type="gum" gid="28" x="72" y="96" width="8" height="8"/>
+  <object id="89" name="gum" type="gum" gid="28" x="72" y="88" width="8" height="8"/>
+  <object id="90" name="gum" type="gum" gid="28" x="72" y="80" width="8" height="8"/>
+  <object id="92" name="gum" type="gum" gid="28" x="120" y="40" width="8" height="8"/>
+  <object id="93" name="gum" type="gum" gid="28" x="128" y="40" width="8" height="8"/>
+  <object id="94" name="gum" type="gum" gid="28" x="136" y="40" width="8" height="8"/>
+  <object id="95" name="gum" type="gum" gid="28" x="144" y="40" width="8" height="8"/>
+  <object id="96" name="gum" type="gum" gid="28" x="152" y="40" width="8" height="8"/>
+  <object id="97" name="gum" type="gum" gid="28" x="160" y="40" width="8" height="8"/>
+  <object id="98" name="gum" type="gum" gid="28" x="168" y="40" width="8" height="8"/>
+  <object id="99" name="gum" type="gum" gid="28" x="176" y="40" width="8" height="8"/>
+  <object id="100" name="gum" type="gum" gid="28" x="184" y="40" width="8" height="8"/>
+  <object id="101" name="gum" type="gum" gid="28" x="192" y="40" width="8" height="8"/>
+  <object id="102" name="gum" type="gum" gid="28" x="200" y="40" width="8" height="8"/>
+  <object id="103" name="gum" type="gum" gid="28" x="208" y="40" width="8" height="8"/>
+  <object id="104" name="gum" type="gum" gid="28" x="208" y="48" width="8" height="8"/>
+  <object id="105" name="gum" type="gum" gid="28" x="208" y="64" width="8" height="8"/>
+  <object id="106" name="gum" type="gum" gid="28" x="208" y="72" width="8" height="8"/>
+  <object id="107" name="gum" type="gum" gid="28" x="208" y="80" width="8" height="8"/>
+  <object id="108" name="gum" type="gum" gid="28" x="208" y="88" width="8" height="8"/>
+  <object id="109" name="gum" type="gum" gid="28" x="208" y="96" width="8" height="8"/>
+  <object id="110" name="gum" type="gum" gid="28" x="200" y="96" width="8" height="8"/>
+  <object id="111" name="gum" type="gum" gid="28" x="192" y="96" width="8" height="8"/>
+  <object id="112" name="gum" type="gum" gid="28" x="184" y="96" width="8" height="8"/>
+  <object id="113" name="gum" type="gum" gid="28" x="176" y="96" width="8" height="8"/>
+  <object id="114" name="gum" type="gum" gid="28" x="168" y="96" width="8" height="8"/>
+  <object id="115" name="gum" type="gum" gid="28" x="168" y="88" width="8" height="8"/>
+  <object id="116" name="gum" type="gum" gid="28" x="168" y="72" width="8" height="8"/>
+  <object id="117" name="gum" type="gum" gid="28" x="168" y="80" width="8" height="8"/>
+  <object id="118" name="gum" type="gum" gid="28" x="168" y="64" width="8" height="8"/>
+  <object id="119" name="gum" type="gum" gid="28" x="168" y="56" width="8" height="8"/>
+  <object id="120" name="gum" type="gum" gid="28" x="168" y="48" width="8" height="8"/>
+  <object id="121" name="gum" type="gum" gid="28" x="176" y="72" width="8" height="8"/>
+  <object id="122" name="gum" type="gum" gid="28" x="184" y="72" width="8" height="8"/>
+  <object id="123" name="gum" type="gum" gid="28" x="192" y="72" width="8" height="8"/>
+  <object id="124" name="gum" type="gum" gid="28" x="200" y="72" width="8" height="8"/>
+  <object id="125" name="gum" type="gum" gid="28" x="104" y="72" width="8" height="8"/>
+  <object id="126" name="gum" type="gum" gid="28" x="120" y="72" width="8" height="8"/>
+  <object id="127" name="gum" type="gum" gid="28" x="112" y="72" width="8" height="8"/>
+  <object id="128" name="gum" type="gum" gid="28" x="128" y="72" width="8" height="8"/>
+  <object id="129" name="gum" type="gum" gid="28" x="136" y="72" width="8" height="8"/>
+  <object id="130" name="gum" type="gum" gid="28" x="144" y="72" width="8" height="8"/>
+  <object id="131" name="gum" type="gum" gid="28" x="152" y="72" width="8" height="8"/>
+  <object id="132" name="gum" type="gum" gid="28" x="160" y="72" width="8" height="8"/>
+  <object id="133" name="gum" type="gum" gid="28" x="120" y="64" width="8" height="8"/>
+  <object id="134" name="gum" type="gum" gid="28" x="120" y="56" width="8" height="8"/>
+  <object id="135" name="gum" type="gum" gid="28" x="120" y="48" width="8" height="8"/>
+  <object id="136" name="gum" type="gum" gid="28" x="120" y="96" width="8" height="8"/>
+  <object id="137" name="gum" type="gum" gid="28" x="128" y="96" width="8" height="8"/>
+  <object id="138" name="gum" type="gum" gid="28" x="136" y="96" width="8" height="8"/>
+  <object id="139" name="gum" type="gum" gid="28" x="144" y="96" width="8" height="8"/>
+  <object id="140" name="gum" type="gum" gid="28" x="144" y="88" width="8" height="8"/>
+  <object id="141" name="gum" type="gum" gid="28" x="144" y="80" width="8" height="8"/>
+  <object id="144" name="gum" type="gum" gid="28" x="48" y="104" width="8" height="8"/>
+  <object id="145" name="gum" type="gum" gid="28" x="48" y="112" width="8" height="8"/>
+  <object id="146" name="gum" type="gum" gid="28" x="48" y="128" width="8" height="8"/>
+  <object id="147" name="gum" type="gum" gid="28" x="48" y="120" width="8" height="8"/>
+  <object id="148" name="gum" type="gum" gid="28" x="48" y="136" width="8" height="8"/>
+  <object id="149" name="gum" type="gum" gid="28" x="48" y="152" width="8" height="8"/>
+  <object id="150" name="gum" type="gum" gid="28" x="48" y="144" width="8" height="8"/>
+  <object id="151" name="gum" type="gum" gid="28" x="48" y="160" width="8" height="8"/>
+  <object id="152" name="gum" type="gum" gid="28" x="48" y="168" width="8" height="8"/>
+  <object id="153" name="gum" type="gum" gid="28" x="48" y="176" width="8" height="8"/>
+  <object id="154" name="gum" type="gum" gid="28" x="48" y="184" width="8" height="8"/>
+  <object id="155" name="gum" type="gum" gid="28" x="48" y="192" width="8" height="8"/>
+  <object id="156" name="gum" type="gum" gid="28" x="40" y="192" width="8" height="8"/>
+  <object id="157" name="gum" type="gum" gid="28" x="32" y="192" width="8" height="8"/>
+  <object id="158" name="gum" type="gum" gid="28" x="24" y="192" width="8" height="8"/>
+  <object id="159" name="gum" type="gum" gid="28" x="16" y="192" width="8" height="8"/>
+  <object id="160" name="gum" type="gum" gid="28" x="8" y="192" width="8" height="8"/>
+  <object id="162" name="gum" type="gum" gid="28" x="8" y="200" width="8" height="8"/>
+  <object id="163" name="gum" type="gum" gid="28" x="8" y="208" width="8" height="8"/>
+  <object id="164" name="gum" type="gum" gid="28" x="16" y="216" width="8" height="8"/>
+  <object id="165" name="gum" type="gum" gid="28" x="24" y="216" width="8" height="8"/>
+  <object id="166" name="gum" type="gum" gid="28" x="24" y="224" width="8" height="8"/>
+  <object id="167" name="gum" type="gum" gid="28" x="24" y="232" width="8" height="8"/>
+  <object id="168" name="gum" type="gum" gid="28" x="24" y="240" width="8" height="8"/>
+  <object id="169" name="gum" type="gum" gid="28" x="16" y="240" width="8" height="8"/>
+  <object id="170" name="gum" type="gum" gid="28" x="8" y="240" width="8" height="8"/>
+  <object id="171" name="gum" type="gum" gid="28" x="8" y="248" width="8" height="8"/>
+  <object id="172" name="gum" type="gum" gid="28" x="8" y="256" width="8" height="8"/>
+  <object id="173" name="gum" type="gum" gid="28" x="8" y="264" width="8" height="8"/>
+  <object id="174" name="gum" type="gum" gid="28" x="16" y="264" width="8" height="8"/>
+  <object id="175" name="gum" type="gum" gid="28" x="24" y="264" width="8" height="8"/>
+  <object id="176" name="gum" type="gum" gid="28" x="32" y="264" width="8" height="8"/>
+  <object id="177" name="gum" type="gum" gid="28" x="40" y="264" width="8" height="8"/>
+  <object id="178" name="gum" type="gum" gid="28" x="48" y="264" width="8" height="8"/>
+  <object id="179" name="gum" type="gum" gid="28" x="56" y="264" width="8" height="8"/>
+  <object id="180" name="gum" type="gum" gid="28" x="64" y="264" width="8" height="8"/>
+  <object id="181" name="gum" type="gum" gid="28" x="72" y="264" width="8" height="8"/>
+  <object id="182" name="gum" type="gum" gid="28" x="80" y="264" width="8" height="8"/>
+  <object id="183" name="gum" type="gum" gid="28" x="88" y="264" width="8" height="8"/>
+  <object id="184" name="gum" type="gum" gid="28" x="96" y="264" width="8" height="8"/>
+  <object id="185" name="gum" type="gum" gid="28" x="104" y="264" width="8" height="8"/>
+  <object id="186" name="gum" type="gum" gid="28" x="112" y="264" width="8" height="8"/>
+  <object id="187" name="gum" type="gum" gid="28" x="120" y="264" width="8" height="8"/>
+  <object id="188" name="gum" type="gum" gid="28" x="128" y="264" width="8" height="8"/>
+  <object id="189" name="gum" type="gum" gid="28" x="136" y="264" width="8" height="8"/>
+  <object id="190" name="gum" type="gum" gid="28" x="144" y="264" width="8" height="8"/>
+  <object id="191" name="gum" type="gum" gid="28" x="152" y="264" width="8" height="8"/>
+  <object id="192" name="gum" type="gum" gid="28" x="160" y="264" width="8" height="8"/>
+  <object id="193" name="gum" type="gum" gid="28" x="168" y="264" width="8" height="8"/>
+  <object id="194" name="gum" type="gum" gid="28" x="176" y="264" width="8" height="8"/>
+  <object id="195" name="gum" type="gum" gid="28" x="184" y="264" width="8" height="8"/>
+  <object id="196" name="gum" type="gum" gid="28" x="192" y="264" width="8" height="8"/>
+  <object id="197" name="gum" type="gum" gid="28" x="200" y="264" width="8" height="8"/>
+  <object id="198" name="gum" type="gum" gid="28" x="208" y="264" width="8" height="8"/>
+  <object id="199" name="gum" type="gum" gid="28" x="208" y="256" width="8" height="8"/>
+  <object id="200" name="gum" type="gum" gid="28" x="208" y="248" width="8" height="8"/>
+  <object id="201" name="gum" type="gum" gid="28" x="208" y="240" width="8" height="8"/>
+  <object id="202" name="gum" type="gum" gid="28" x="200" y="240" width="8" height="8"/>
+  <object id="203" name="gum" type="gum" gid="28" x="32" y="240" width="8" height="8"/>
+  <object id="204" name="gum" type="gum" gid="28" x="40" y="240" width="8" height="8"/>
+  <object id="205" name="gum" type="gum" gid="28" x="48" y="240" width="8" height="8"/>
+  <object id="206" name="gum" type="gum" gid="28" x="48" y="200" width="8" height="8"/>
+  <object id="207" name="gum" type="gum" gid="28" x="48" y="208" width="8" height="8"/>
+  <object id="208" name="gum" type="gum" gid="28" x="48" y="216" width="8" height="8"/>
+  <object id="209" name="gum" type="gum" gid="28" x="48" y="224" width="8" height="8"/>
+  <object id="210" name="gum" type="gum" gid="28" x="48" y="232" width="8" height="8"/>
+  <object id="211" name="gum" type="gum" gid="28" x="168" y="240" width="8" height="8"/>
+  <object id="212" name="gum" type="gum" gid="28" x="176" y="240" width="8" height="8"/>
+  <object id="213" name="gum" type="gum" gid="28" x="184" y="240" width="8" height="8"/>
+  <object id="214" name="gum" type="gum" gid="28" x="192" y="240" width="8" height="8"/>
+  <object id="215" name="gum" type="gum" gid="28" x="192" y="232" width="8" height="8"/>
+  <object id="216" name="gum" type="gum" gid="28" x="192" y="224" width="8" height="8"/>
+  <object id="217" name="gum" type="gum" gid="28" x="192" y="216" width="8" height="8"/>
+  <object id="218" name="gum" type="gum" gid="28" x="200" y="216" width="8" height="8"/>
+  <object id="219" name="gum" type="gum" gid="28" x="208" y="208" width="8" height="8"/>
+  <object id="220" name="gum" type="gum" gid="28" x="208" y="200" width="8" height="8"/>
+  <object id="221" name="gum" type="gum" gid="28" x="208" y="192" width="8" height="8"/>
+  <object id="222" name="gum" type="gum" gid="28" x="200" y="192" width="8" height="8"/>
+  <object id="223" name="gum" type="gum" gid="28" x="192" y="192" width="8" height="8"/>
+  <object id="224" name="gum" type="gum" gid="28" x="184" y="192" width="8" height="8"/>
+  <object id="225" name="gum" type="gum" gid="28" x="176" y="192" width="8" height="8"/>
+  <object id="226" name="gum" type="gum" gid="28" x="168" y="192" width="8" height="8"/>
+  <object id="227" name="gum" type="gum" gid="28" x="72" y="240" width="8" height="8"/>
+  <object id="228" name="gum" type="gum" gid="28" x="80" y="240" width="8" height="8"/>
+  <object id="229" name="gum" type="gum" gid="28" x="88" y="240" width="8" height="8"/>
+  <object id="230" name="gum" type="gum" gid="28" x="96" y="240" width="8" height="8"/>
+  <object id="231" name="gum" type="gum" gid="28" x="96" y="248" width="8" height="8"/>
+  <object id="232" name="gum" type="gum" gid="28" x="96" y="256" width="8" height="8"/>
+  <object id="233" name="gum" type="gum" gid="28" x="120" y="256" width="8" height="8"/>
+  <object id="234" name="gum" type="gum" gid="28" x="120" y="248" width="8" height="8"/>
+  <object id="235" name="gum" type="gum" gid="28" x="120" y="240" width="8" height="8"/>
+  <object id="236" name="gum" type="gum" gid="28" x="128" y="240" width="8" height="8"/>
+  <object id="237" name="gum" type="gum" gid="28" x="136" y="240" width="8" height="8"/>
+  <object id="238" name="gum" type="gum" gid="28" x="144" y="240" width="8" height="8"/>
+  <object id="239" name="gum" type="gum" gid="28" x="144" y="232" width="8" height="8"/>
+  <object id="240" name="gum" type="gum" gid="28" x="144" y="216" width="8" height="8"/>
+  <object id="241" name="gum" type="gum" gid="28" x="144" y="224" width="8" height="8"/>
+  <object id="242" name="gum" type="gum" gid="28" x="120" y="216" width="8" height="8"/>
+  <object id="243" name="gum" type="gum" gid="28" x="128" y="216" width="8" height="8"/>
+  <object id="244" name="gum" type="gum" gid="28" x="136" y="216" width="8" height="8"/>
+  <object id="245" name="gum" type="gum" gid="28" x="152" y="216" width="8" height="8"/>
+  <object id="246" name="gum" type="gum" gid="28" x="160" y="216" width="8" height="8"/>
+  <object id="247" name="gum" type="gum" gid="28" x="168" y="216" width="8" height="8"/>
+  <object id="248" name="gum" type="gum" gid="28" x="168" y="224" width="8" height="8"/>
+  <object id="249" name="gum" type="gum" gid="28" x="168" y="232" width="8" height="8"/>
+  <object id="251" name="gum" type="gum" gid="28" x="168" y="208" width="8" height="8"/>
+  <object id="252" name="gum" type="gum" gid="28" x="168" y="200" width="8" height="8"/>
+  <object id="253" name="gum" type="gum" gid="28" x="56" y="216" width="8" height="8"/>
+  <object id="254" name="gum" type="gum" gid="28" x="64" y="216" width="8" height="8"/>
+  <object id="255" name="gum" type="gum" gid="28" x="72" y="216" width="8" height="8"/>
+  <object id="256" name="gum" type="gum" gid="28" x="72" y="224" width="8" height="8"/>
+  <object id="257" name="gum" type="gum" gid="28" x="72" y="232" width="8" height="8"/>
+  <object id="258" name="gum" type="gum" gid="28" x="56" y="192" width="8" height="8"/>
+  <object id="259" name="gum" type="gum" gid="28" x="64" y="192" width="8" height="8"/>
+  <object id="260" name="gum" type="gum" gid="28" x="72" y="192" width="8" height="8"/>
+  <object id="261" name="gum" type="gum" gid="28" x="80" y="192" width="8" height="8"/>
+  <object id="262" name="gum" type="gum" gid="28" x="88" y="192" width="8" height="8"/>
+  <object id="263" name="gum" type="gum" gid="28" x="96" y="192" width="8" height="8"/>
+  <object id="264" name="gum" type="gum" gid="28" x="96" y="200" width="8" height="8"/>
+  <object id="265" name="gum" type="gum" gid="28" x="96" y="208" width="8" height="8"/>
+  <object id="266" name="gum" type="gum" gid="28" x="96" y="216" width="8" height="8"/>
+  <object id="267" name="gum" type="gum" gid="28" x="88" y="216" width="8" height="8"/>
+  <object id="268" name="gum" type="gum" gid="28" x="80" y="216" width="8" height="8"/>
+  <object id="269" name="gum" type="gum" gid="28" x="104" y="216" width="8" height="8"/>
+  <object id="270" name="gum" type="gum" gid="28" x="112" y="216" width="8" height="8"/>
+  <object id="271" name="gum" type="gum" gid="28" x="120" y="208" width="8" height="8"/>
+  <object id="272" name="gum" type="gum" gid="28" x="120" y="200" width="8" height="8"/>
+  <object id="273" name="gum" type="gum" gid="28" x="120" y="192" width="8" height="8"/>
+  <object id="274" name="gum" type="gum" gid="28" x="128" y="192" width="8" height="8"/>
+  <object id="275" name="gum" type="gum" gid="28" x="136" y="192" width="8" height="8"/>
+  <object id="276" name="gum" type="gum" gid="28" x="144" y="192" width="8" height="8"/>
+  <object id="277" name="gum" type="gum" gid="28" x="152" y="192" width="8" height="8"/>
+  <object id="278" name="gum" type="gum" gid="28" x="160" y="192" width="8" height="8"/>
+  <object id="279" name="gum" type="gum" gid="28" x="168" y="184" width="8" height="8"/>
+  <object id="280" name="gum" type="gum" gid="28" x="168" y="176" width="8" height="8"/>
+  <object id="281" name="gum" type="gum" gid="28" x="168" y="168" width="8" height="8"/>
+  <object id="282" name="gum" type="gum" gid="28" x="168" y="160" width="8" height="8"/>
+  <object id="283" name="gum" type="gum" gid="28" x="168" y="152" width="8" height="8"/>
+  <object id="284" name="gum" type="gum" gid="28" x="168" y="144" width="8" height="8"/>
+  <object id="285" name="gum" type="gum" gid="28" x="168" y="136" width="8" height="8"/>
+  <object id="286" name="gum" type="gum" gid="28" x="168" y="128" width="8" height="8"/>
+  <object id="287" name="gum" type="gum" gid="28" x="168" y="120" width="8" height="8"/>
+  <object id="288" name="gum" type="gum" gid="28" x="168" y="112" width="8" height="8"/>
+  <object id="289" name="gum" type="gum" gid="28" x="168" y="104" width="8" height="8"/>
+ </objectgroup>
+ <objectgroup name="supergums">
+  <object id="290" name="supergum" type="supergum" gid="42" x="8" y="56" width="8" height="8"/>
+  <object id="291" name="supergum" type="supergum" gid="42" x="208" y="56" width="8" height="8"/>
+  <object id="292" name="supergum" type="supergum" gid="42" x="8" y="216" width="8" height="8"/>
+  <object id="293" name="supergum" type="supergum" gid="42" x="208" y="216" width="8" height="8"/>
+ </objectgroup>
+</map>

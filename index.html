@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Phaser pacman</title>
+    <title>Phaser launcher</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/phaser.min.js"></script>
     <script src="js/boot.js"></script>
@@ -14,10 +14,10 @@
     <script>
         var PhaserPacman = PhaserPacman || {};
 
-    		PhaserPacman.game = new Phaser.Game(800, 600, Phaser.AUTO, '');
+    		PhaserPacman.game = new Phaser.Game(448, 576, Phaser.AUTO, '');
         // pixel art : no smoothing, please
         PhaserPacman.game.antialias = false;
-        
+
         PhaserPacman.game.state.add('PhaserPacman.Boot', PhaserPacman.Boot);
     		PhaserPacman.game.state.add('PhaserPacman.Title', PhaserPacman.Title);
     		PhaserPacman.game.state.add('PhaserPacman.Main', PhaserPacman.Main);

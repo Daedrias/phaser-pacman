@@ -2,6 +2,7 @@ var PhaserPacman = PhaserPacman || {};
 
 PhaserPacman.Main = function(game) {
   this.SCALE = 1;
+  this.PACMAN_VEL = 75;
 };
 
 PhaserPacman.Main.prototype = {
@@ -45,20 +46,24 @@ PhaserPacman.Main.prototype = {
   update: function() {
     // nope, you can`'t pass thru walls
     this.game.physics.arcade.collide(this.pacman, this.wallsLayer);
+    // collect gums while passing on it
+    this.game.physics.arcade.overlap(this.pacman, this.gums, this.collectGum, null, this);
+    // collect gums while passing on it
+    this.game.physics.arcade.overlap(this.pacman, this.supergums, this.collectSuperGum, null, this);
 
     //pacman movement
     this.pacman.body.velocity.y = 0;
     this.pacman.body.velocity.x = 0;
 
     if (this.cursors.up.isDown) {
-      this.pacman.body.velocity.y -= 50;
+      this.pacman.body.velocity.y -= this.PACMAN_VEL;
     } else if (this.cursors.down.isDown) {
-      this.pacman.body.velocity.y += 50;
+      this.pacman.body.velocity.y += this.PACMAN_VEL;
     }
     if (this.cursors.left.isDown) {
-      this.pacman.body.velocity.x -= 50;
+      this.pacman.body.velocity.x -= this.PACMAN_VEL;
     } else if (this.cursors.right.isDown) {
-      this.pacman.body.velocity.x += 50;
+      this.pacman.body.velocity.x += this.PACMAN_VEL;
     }
   },
   render: function() {
@@ -82,10 +87,11 @@ PhaserPacman.Main.prototype = {
     this.map.createFromObjects('supergums', 'supergum', 'supergum', 0, true, false, this.supergums);
   },
   collectGum: function(pacman, gum) {
-
+    gum.kill();
   },
   collectSuperGum: function(pacman, supergum) {
-
+    console.log(this.supergums.total);
+    supergum.kill();
   },
   debugMode: function() {
     this.game.debug.body(this.pacman);

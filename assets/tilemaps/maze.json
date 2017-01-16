@@ -2682,30 +2682,6 @@
                 {
                  "gid":28,
                  "height":8,
-                 "id":269,
-                 "name":"gum",
-                 "rotation":0,
-                 "type":"gum",
-                 "visible":true,
-                 "width":8,
-                 "x":104,
-                 "y":216
-                }, 
-                {
-                 "gid":28,
-                 "height":8,
-                 "id":270,
-                 "name":"gum",
-                 "rotation":0,
-                 "type":"gum",
-                 "visible":true,
-                 "width":8,
-                 "x":112,
-                 "y":216
-                }, 
-                {
-                 "gid":28,
-                 "height":8,
                  "id":271,
                  "name":"gum",
                  "rotation":0,

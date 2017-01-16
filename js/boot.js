@@ -10,7 +10,8 @@ PhaserPacman.Boot.prototype = {
     this.scale.pageAlignHorizontally = true;
     //  this.scale.pageAlignVertically = true;
 
-    this.game.stage.backgroundColor = "#4488AA";
+    //this.game.stage.backgroundColor = "#4488AA";
+    this.game.physics.startSystem(Phaser.Physics.ARCADE);
   },
   create: function() {
     this.state.start('PhaserPacman.Title');

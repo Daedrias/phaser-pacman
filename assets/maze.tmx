@@ -3,7 +3,7 @@
  <tileset firstgid="1" name="maze_tileset" tilewidth="8" tileheight="8" spacing="1" tilecount="42" columns="14">
   <image source="maze_tileset.png" width="125" height="26"/>
  </tileset>
- <layer name="background" width="28" height="36">
+ <layer name="background" width="28" height="36" visible="0">
   <data encoding="csv">
 16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
 16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,
@@ -83,7 +83,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup name="gums">
+ <objectgroup name="gums" visible="0">
   <object id="39" name="gum" type="gum" gid="28" x="8" y="40" width="8" height="8"/>
   <object id="40" name="gum" type="gum" gid="28" x="16" y="40" width="8" height="8"/>
   <object id="41" name="gum" type="gum" gid="28" x="24" y="40" width="8" height="8"/>
@@ -305,8 +305,6 @@
   <object id="266" name="gum" type="gum" gid="28" x="96" y="216" width="8" height="8"/>
   <object id="267" name="gum" type="gum" gid="28" x="88" y="216" width="8" height="8"/>
   <object id="268" name="gum" type="gum" gid="28" x="80" y="216" width="8" height="8"/>
-  <object id="269" name="gum" type="gum" gid="28" x="104" y="216" width="8" height="8"/>
-  <object id="270" name="gum" type="gum" gid="28" x="112" y="216" width="8" height="8"/>
   <object id="271" name="gum" type="gum" gid="28" x="120" y="208" width="8" height="8"/>
   <object id="272" name="gum" type="gum" gid="28" x="120" y="200" width="8" height="8"/>
   <object id="273" name="gum" type="gum" gid="28" x="120" y="192" width="8" height="8"/>
@@ -327,7 +325,7 @@
   <object id="288" name="gum" type="gum" gid="28" x="168" y="112" width="8" height="8"/>
   <object id="289" name="gum" type="gum" gid="28" x="168" y="104" width="8" height="8"/>
  </objectgroup>
- <objectgroup name="supergums">
+ <objectgroup name="supergums" visible="0">
   <object id="290" name="supergum" type="supergum" gid="42" x="8" y="56" width="8" height="8"/>
   <object id="291" name="supergum" type="supergum" gid="42" x="208" y="56" width="8" height="8"/>
   <object id="292" name="supergum" type="supergum" gid="42" x="8" y="216" width="8" height="8"/>

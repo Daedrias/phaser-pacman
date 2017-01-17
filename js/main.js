@@ -1,15 +1,13 @@
 var PhaserPacman = PhaserPacman || {};
 
 PhaserPacman.Main = function(game) {
-  this.SCALE = 1;
-  this.PACMAN_VEL = 75;
+  this.PACMAN_VEL = 200;
 };
 
 PhaserPacman.Main.prototype = {
   preload: function() {
-    //  this.world.scale.set(this.SCALE);
     this.load.tilemap('maze', 'tilemaps/maze.json', null, Phaser.Tilemap.TILED_JSON);
-    this.load.image('maze_tileset', 'maze_tileset.png');
+    this.load.image('maze_tileset', 'maze_tileset_32x32.png');
     this.load.image('gum', 'gum.png');
     this.load.image('supergum', 'supergum.png');
     this.load.image('pacman', 'pacman.png');
@@ -33,7 +31,7 @@ PhaserPacman.Main.prototype = {
 
     this.createGumSprites();
 
-    this.pacman = this.game.add.sprite(this.world.centerX, 212, 'pacman');
+    this.pacman = this.game.add.sprite(this.world.centerX, 848, 'pacman');
     this.pacman.anchor.setTo(0.5, 0.5);
     this.game.physics.arcade.enable(this.pacman);
     this.pacman.body.velocity.x = 0;

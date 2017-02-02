@@ -1,7 +1,7 @@
 var PhaserPacman = PhaserPacman || {};
 
 PhaserPacman.Main = function(game) {
-  this.PACMAN_VEL = 200;
+  this.PACMAN_VEL = 300;
 };
 
 PhaserPacman.Main.prototype = {
@@ -31,12 +31,7 @@ PhaserPacman.Main.prototype = {
 
     this.createGumSprites();
 
-    this.pacman = this.game.add.sprite(this.world.centerX, 848, 'pacman');
-    this.pacman.anchor.setTo(0.5, 0.5);
-    this.game.physics.arcade.enable(this.pacman);
-    this.pacman.body.velocity.x = 0;
-    this.pacman.body.velocity.y = 0;
-
+    this.pacman = new Pacman(this.game, this.world.centerX, 848);
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
 
@@ -50,18 +45,15 @@ PhaserPacman.Main.prototype = {
     this.game.physics.arcade.overlap(this.pacman, this.supergums, this.collectSuperGum, null, this);
 
     //pacman movement
-    this.pacman.body.velocity.y = 0;
-    this.pacman.body.velocity.x = 0;
-
     if (this.cursors.up.isDown) {
-      this.pacman.body.velocity.y -= this.PACMAN_VEL;
+      this.pacman.moveUp();
     } else if (this.cursors.down.isDown) {
-      this.pacman.body.velocity.y += this.PACMAN_VEL;
+      this.pacman.moveDown();
     }
     if (this.cursors.left.isDown) {
-      this.pacman.body.velocity.x -= this.PACMAN_VEL;
+      this.pacman.moveLeft();
     } else if (this.cursors.right.isDown) {
-      this.pacman.body.velocity.x += this.PACMAN_VEL;
+      this.pacman.moveRight();
     }
   },
   render: function() {
@@ -86,10 +78,19 @@ PhaserPacman.Main.prototype = {
   },
   collectGum: function(pacman, gum) {
     gum.kill();
+    this.checkRemainingGums();
   },
   collectSuperGum: function(pacman, supergum) {
-    console.log(this.supergums.total);
     supergum.kill();
+    this.checkRemainingGums();
+  },
+  checkRemainingGums: function() {
+    if (this.gums.total === 0 && this.supergums.total === 0) {
+      this.gameOver();
+    }
+  },
+  gameOver: function() {
+    console.log('Game Over!');
   },
   debugMode: function() {
     this.game.debug.body(this.pacman);

@@ -81,7 +81,6 @@ export default class GameScene extends Phaser.Scene {
     }
 
     collectGum(pacman, gum) {
-        console.log('yolo');
         gum.destroy();
         this.checkRemainingGums();
     }

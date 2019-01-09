@@ -1,9 +1,7 @@
-PhaserPacman.Scoreboard = function(game) {
-
-};
-
-PhaserPacman.Scoreboard.prototype = {
-  create: function() {},
-  update: function() {},
-  shutDowm: function() {}
-};
+export default class ScoreboardScene extends Phaser.Scene {
+  constructor() {
+      super({
+          key: "ScoreboardScene"
+      });
+  }
+}
